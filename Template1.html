@@ -1,0 +1,957 @@
+<html>
+
+<head>
+    <style>
+        header {
+            background-image: url('banner-image.jpg');
+        }
+
+        .lists {
+            display: flex;
+        }
+
+        .lists ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .lists ul li {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .but1 {
+            height: 30px;
+            margin-top: 20px;
+            background-color: transparent;
+            color: white;
+        }
+
+        .button2 {
+            background-color: red;
+            height: 30px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .bar {
+            display: flex;
+            width: 70%;
+            justify-content: end;
+        }
+
+        .press {
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .work {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 60px;
+        }
+
+        .text {
+            color: white;
+            width: 25%;
+        }
+
+        .jobs {
+            background-image: url('tag.png');
+            width: 20%;
+            background-repeat: no-repeat;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            /* padding: 0 70px; */
+            box-shadow: 0 5px 2px rgba(0, 0, 0, 0.232);
+
+        }
+
+        .jobtext {
+            margin-top: 18px;
+        }
+
+        strong {
+            color: red;
+        }
+
+        .latest {
+            font-size: 35px;
+            font-weight: bolder;
+        }
+
+        .contracted {
+            display: flex;
+            border-radius: 5px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.232);
+            position: relative;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .butt {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: gray;
+            background-color: rgb(233, 228, 228);
+            border: none;
+            padding: 5px;
+        }
+
+        .tagged {
+            border: 1px solid rgb(216, 207, 207);
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.232);
+        }
+
+        .apply {
+            border: 1px solid rgb(179, 176, 176);
+            padding: 5px 10px;
+            margin: 10px;
+        }
+
+        .apply2 {
+            border: none;
+            padding: 5px 10px;
+            margin: 10px;
+            color: white;
+            background-color: rgb(75, 162, 243);
+
+        }
+
+        .news {
+            font-size: 30px;
+            background-color: rgb(186, 35, 93);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .imagetext {
+            border: none;
+            background-color: rgb(233, 229, 229);
+            padding: 35px 20px;
+            color: grey;
+        }
+
+        .headlines1 {
+            display: flex;
+            border-radius: 5px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.232);
+            gap: 15px;
+        }
+
+        .newsheadlines {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: #f6f4f4;
+        }
+
+        .latestnews {
+            padding-top:9%;
+            width: 30%;
+        }
+
+        .eachjobs {
+            width: 50%;
+        }
+
+        .popular {
+            display: flex;
+            border: 1px solid gray;
+            border-radius: 150px;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            padding: 40px;
+            position: relative;
+            margin: 0 100px;
+
+        }
+
+        .jobpost {
+            width: 30%;
+            text-align: center;
+        }
+
+        .applyjob {
+            width: 30%;
+            text-align: center;
+        }
+
+        .job {
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid gray;
+            position: absolute;
+            bottom: -10px;
+            left: 26%;
+        }
+
+        .job1 {
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid gray;
+            position: absolute;
+            bottom: -10px;
+            right: 26%;
+        }
+
+        .everywhere {
+            text-align: center;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            justify-content: center;
+        }
+
+        .available {
+            border: none;
+            background-color: rgba(0, 149, 255, 0.538);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .members {
+            border: none;
+            background-color: rgba(24, 160, 198, 0.785);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .application {
+            border: none;
+            background-color: rgba(0, 149, 255, 0.538);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .companies {
+            border: none;
+            background-color: rgba(24, 160, 198, 0.785);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .wekeep {
+            margin: 40px 0;
+            padding: 40px;
+            background-color: #f6f4f4;
+        }
+
+        .partners {
+            text-align: center;
+            margin: 0 100px;
+            font-size: 20px;
+        }
+
+        .vintage1 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage2 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage3 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage4 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+            margin: 10px;
+
+        }
+
+        .vintage5 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage6 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage {
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .vintage7 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage8 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage9 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage10 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage11 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintage12 {
+
+            border: 1px solid black;
+
+            width: 200px;
+
+            margin: 10px;
+
+        }
+
+        .vintagepart {
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .lady {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        .people {
+
+            padding: 50px;
+
+            background-color: #f6f4f4;
+
+            border-radius: 2px;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+            margin: 20px 0;
+
+        }
+
+        .description {
+
+            text-align: center;
+
+        }
+
+        .login {
+
+            padding: 40px 0;
+
+            padding-left: 7%;
+            width: 60%;
+
+        }
+
+        input[type=text] {
+
+            margin: 10px;
+
+            width: 280px;
+
+            padding: 10px;
+
+        }
+
+        textarea {
+
+            width: 85%;
+
+            height: 100px;
+
+        }
+
+        .Assistant {
+
+            background:
+
+                linear-gradient(rgba(220, 7, 29, 0.668),
+
+                    rgba(216, 16, 36, 0.771)), url('/contact.jpg');
+
+            margin: 0;
+
+            padding: 0;
+            width: 45%;
+
+        }
+
+        .Assistant h1 {
+
+            border: 4px solid white;
+
+            font-size: 25px;
+
+            width: 20%;
+
+            color: white;
+
+            padding: 30px;
+
+            margin: 100px;
+
+            margin-left: 50px;
+            font-weight: bold;
+
+        }
+
+        .back {
+
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .buttonform {
+            background-color: red;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            width: 35%;
+            color: white;
+        }
+
+        footer {
+
+            background-color: rgba(9, 12, 190, 0.97);
+
+            color: white;
+            padding:20px 0;
+
+        }
+
+        .footerlogo{
+            display: flex;
+            height: 100px;
+            justify-content: center;
+        }
+
+        .footerlist ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footerlist ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        footer p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <div class="logo">
+                <img src="./login-logo.png" width="100" height="100">
+            </div>
+            <div class="bar">
+                <div class="lists">
+                    <ul>
+                        <li><a herf="#home"> Home </a></li>
+                        <li><a herf="#about us">About Us</a></li>
+                        <li><a herf="#partner"> Partners </a></li>
+                        <li><a herf="#gallery">Gallery </a></li>
+                        <li><a herf="#contact us"> Contact Us </a></li>
+                    </ul>
+                </div>
+                <div class="press">
+                    <button class="but1">LOGIN</button>
+                    <button class="button2">+Post a Job</button>
+                    <button class="but1">Admin Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="work">
+            <div class="boy">
+                <img src="boy.png">
+            </div>
+            <div class="text">
+                <p style="font-size: 40px;font-weight: bold;">The Easiest Way to Get Your New Job</p>
+                <p>Search millions of Jobs for free</p>
+            </div>
+        </div>
+    </header>
+    <div class="tag">
+        <div class="jobs">
+            <p>classifield job ads:</p>
+        </div>
+        <div class="jobtext">
+            Lorem posbh is simply dummy text of the <strong>printing </strong>and typesetting
+            <strong> ipsum </strong>is simply dummy stry text of the simole.
+        </div>
+    </div>
+    <section>
+        <!-- <p class="latest">Latest <strong> Jobs opening </strong> </p> -->
+        <!-- <p>Lorem ipsum is simply dummy text of the printing -->
+        <!-- and typesetting industry -->
+        </p>
+        <div class="newsheadlines">
+            <div class="eachjobs">
+                <p class="latest">Latest <strong> Jobs opening </strong> </p>
+                <p>Lorem ipsum is simply dummy text of the printing
+                    and typesetting industry
+                </p>
+                <div class="contracted">
+                    <div class="senior">
+                        <img src="company1.jpg">
+                    </div>
+                    <div class="company1text">
+                        <p style="font-weight:bold ;">Senior Health and food</p>
+                        <p>Company Name comes here </p>
+                        <p>Location:Grand Central Pkwy Hollis NY 11003,Telangana</p>
+                        <button class="butt">Contract Based</button>
+                    </div>
+                </div>
+                <div class="tagged">
+                    <div class="developer">
+                        <p>Tagged as:Developer,it company,Jobs</p>
+                    </div>
+                    <div>
+                        <button class="apply">Apply Now</button>
+                    </div>
+                </div>
+                <div class="contracted">
+                    <div class="senior">
+                        <img src="company2.jpg">
+                    </div>
+                    <div class="company1text">
+                        <p style="font-weight:bold ;">Senior Health and food</p>
+                        <p>Company Name comes here </p>
+                        <p>Location:Grand Central Pkwy Hollis NY 11003,Telangana</p>
+                        <button class="butt">Permanent job</button>
+                    </div>
+                </div>
+                <div class="tagged">
+                    <div class="developer">
+                        <p>Tagged as:Developer,it company,Jobs</p>
+                    </div>
+                    <div>
+                        <button class="apply2">Apply Now</button>
+                    </div>
+                </div>
+                <div class="contracted">
+                    <div class="senior">
+                        <img src="company3.jpg">
+                    </div>
+                    <div class="company1text">
+                        <p style="font-weight:bold ;">Senior Health and food</p>
+                        <p>Company Name comes here </p>
+                        <p>Location:Grand Central Pkwy Hollis NY 11003,Telangana</p>
+                        <button class="butt">Contract Based</button>
+                    </div>
+                </div>
+                <div class="tagged">
+                    <div class="developer">
+                        <p>Tagged as:Developer,it company,Jobs</p>
+                    </div>
+                    <div>
+                        <button class="apply">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="latestnews">
+                <p class="news">Latest News</p>
+                <div class="headlines1">
+                    <div class="headlines">
+                        <p class="imagetext">image</p>
+                    </div>
+                    <div class="headlinetext">
+                        <p style="font-weight: bold;">News Headlines-1</p>
+                        <p>Lorem ipsum is simply dummy text of the printing
+                            and typesetting</p>
+                    </div>
+                </div>
+                <div class="headlines1">
+                    <div class="headlines">
+                        <p class="imagetext">image</p>
+                    </div>
+                    <div class="headlinetext">
+                        <p style="font-weight: bold;">News Headlines-1</p>
+                        <p>Lorem ipsum is simply dummy text of the printing
+                            and typesetting</p>
+                    </div>
+                </div>
+                <div class="headlines1">
+                    <div class="headlines">
+                        <p class="imagetext">image</p>
+                    </div>
+                    <div class="headlinetext">
+                        <p style="font-weight: bold;">News Headlines-1</p>
+                        <p>Lorem ipsum is simply dummy text of the printing
+                            and typesetting</p>
+                    </div>
+                </div>
+                <div class="headlines1">
+                    <div class="headlines">
+                        <p class="imagetext">image</p>
+                    </div>
+                    <div class="headlinetext">
+                        <p style="font-weight: bold;">News Headlines-1</p>
+                        <p>Lorem ipsum is simply dummy text of the printing
+                            and typesetting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="everywhere">
+            <p class="latest">We are Popular<strong> Everywhere </strong></p>
+            <p style="font-size:15px;">Your next level Product development company assets</p>
+        </div>
+        <div class="popular">
+            <div class="jobpost">
+                <img src="job-post.png">
+                <p style="font-size: 25px;">Are you employer?</p>
+                <p>Lorem ipsum is simply dummy text of the printing
+                    and typesetting industry of the text</p>
+                <button class="job">Post a Job</button>
+            </div>
+            <div>
+                <p>OR</p>
+            </div>
+            <div class="applyjob">
+                <img src="apply-job.png">
+                <p style="font-size: 25px;">Are you job seeker?</p>
+                <p>Lorem ipsum is simply dummy text of the printing
+                    and typesetting industry of the text</p>
+                <button class="job1">Apply Job</button>
+            </div>
+        </div>
+    </section>
+    <section class="wekeep">
+        <p style="font-size:20px; font-weight: bold;width:70%">We Keep Our Promises:Lorem ipsum is simply dummy text of
+            the printing
+            and typesetting industry of the text Lorem ipsum is simply dummy text Lorem ipsum is simply dummy text
+            of the printing industry</p>
+        <p>Lorem ipsum is simply dummy text of the printing
+            and typesetting industry of the text</p>
+        <div class="boxes">
+            <div class="available">
+                <p style="font-size: 25px;font-weight: bold;">5890+</p>
+                <p>jobs available</p>
+            </div>
+            <div class="members">
+                <p style="font-size: 25px;font-weight: bold;">255472+</p>
+                <p>members</p>
+            </div>
+            <div class="application">
+                <p style="font-size: 25px;font-weight: bold;">51428+</p>
+                <p>Applications</p>
+            </div>
+            <div class="Companies">
+                <p style="font-size: 25px;font-weight: bold;">14200+</p>
+                <p>Companies</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="partners">
+            <p class="latest">Our <strong> Partners</strong></p>
+            <p> Lorem ipsum is simply dummy text of
+                the printing and typesetting industry of the text Lorem ipsum is simply dummy text Lorem ipsum is simply
+                dummy text
+                of the printing industry.Lorem ipsum is simply dummy text of
+                the printing and typesetting industry of the text Lorem ipsum is simply dummy text Lorem ipsum is simply
+                dummy text
+                of the printing industry</p>
+        </div>
+        <div class="vintage">
+
+            <div class="vintage1">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+            <div class="vintage2">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+            <div class="vintage3">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+            <div class="vintage4">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+            <div class="vintage5">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+            <div class="vintage6">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+        </div>
+
+        <div class="vintagepart">
+
+            <div class="vintage7">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+            <div class="vintage8">
+
+                <img src="./partner-1.png">
+
+            </div>
+            <div class="vintage9">
+
+                <img src="./partner-1.png">
+
+            </div>
+            <div class="vintage10">
+
+                <img src="./partner-1.png">
+
+            </div>
+            <div class="vintage11">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+            <div class="vintage12">
+
+                <img src="./partner-1.png">
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="People">
+
+        <div class="lady">
+
+            <img src="./user.jpg">
+
+        </div>
+
+        <div class="description">
+
+            <h2>What People Say</h2>
+
+            <p>At vero eos et accusam et justo duo dolores et ea rebum stet
+
+                clita kasd gubergre sea takimata.Sanctus est<br>At vero eos et accusam et justo duo dolores et ea rebum
+                stet
+
+                clita kasd gubergre sea takimata.Sanctus est<br>
+
+                \At vero eos et accusam et justo duo dolores et ea rebum stet
+
+                clita kasd </p><br>
+
+            <p style="color:red">Vandana Luthra</p>
+
+            <p>Manager</p>
+
+            <p>01/03</p>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="back">
+
+            <div class="login">
+
+                <p>Get in Touch</p>
+
+                <b>
+                    <h2>Contact Us</h2>
+                </b>
+
+                <form>
+
+                    <label for="Name"></label>
+
+                    <input type="text" name="Name" value="Name">
+
+                    <label for="Email"></label>
+
+                    <input type="text" name="Email" value="Email"><br>
+
+                    <label for="Phone Number"></label>
+
+                    <input type="text" name="Phone Number" value="phone Number">
+
+                    <label for="Subject"></label>
+
+                    <input type="text" name="Subject" value="Subject"><br>
+
+                    <textarea>Message</textarea>
+
+                    <button class="buttonform">SUBMIT</button>
+
+                </form>
+
+            </div>
+
+            <div class="Assistant">
+
+                <h1>Tell Us What You Need so You Can Meet Your Virtual Assistant</h1>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+<div class="footerlogo">
+        <img src="fotter-logo.png">
+</div>
+        <div class="footerlist">
+            <ul>
+
+                <li><a href="#home">Home</a> </li>
+
+                <li><a href="#about us">About us</a></li>
+
+                <li><a href="#partners">Partners</a> </li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#contact us">Contact Us</a></li>
+
+                <li><a href="#Post a Job">Gallery</a></li>
+
+                <li><a href="#Apply for Job">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+
+        <p>Design And Developed By Resource One IT Solutuions</p>
+        <p> @2020 All Rights Reserved and Registered</p>
+
+    </footer>
+
+</body>
+
+</html
